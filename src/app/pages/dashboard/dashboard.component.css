@@ -1,0 +1,34 @@
+/* home.component.css */
+
+.container {
+    padding: 20px;
+    
+  }
+  h1{
+    align-items: center;
+    text-align: center;
+  }
+  
+  .all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-direction: row;
+  }
+  
+  .image {
+    margin: 10px;
+    width: 1000px; /* Adjust image width as needed */
+    text-align: center;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .history {
+    max-width: 600px; /* Limit history width */
+  }
+  

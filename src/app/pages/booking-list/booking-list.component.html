@@ -1,0 +1,45 @@
+<!-- booking-list.component.html -->
+
+<div class="container">
+  <h4>Booking List</h4>
+  <table>
+    <thead>
+      <tr>
+        <th>Booking ID</th>
+        <th>Name</th>
+        <th>Mobile No</th>
+        <th>Email</th>
+        <th>Aadhar No</th>
+        <th>City</th>
+        <th>Address</th>
+        <th>Room ID</th>
+        <th>Booking From Date</th>
+        <th>Booking To Date</th>
+        <th>Booking Rate</th>
+        <th>Naration</th>
+       
+        <th>Action</th> <!-- Add column for action buttons -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let booking of bookings">
+        <td>{{ booking.bookingId }}</td>
+        <td>{{ booking.name }}</td>
+        <td>{{ booking.mobileNo }}</td>
+        <td>{{ booking.email }}</td>
+        <td>{{ booking.aadharNo }}</td>
+        <td>{{ booking.city }}</td>
+        <td>{{ booking.address }}</td>
+        <td>{{ booking.roomId }}</td>
+        <td>{{ booking.bookingFromDate  | date: 'yyyy/MM/dd' }}</td>
+        <td>{{ booking.bookingToDate  | date: 'yyyy/MM/dd' }}</td>
+        <td>{{ booking.bookingRate }}</td>
+        <td>{{ booking.naration }}</td>
+     
+        <td>
+            <button (click)="checkout(booking.bookingId)">Checkout</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,21 @@
+<div class="parent">
+  <div class="ring">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
+  <div class="login">
+    <h2>Register</h2>
+    <form (submit)="onRegister()">
+      <div class="inputBx">
+        <input type="text" [(ngModel)]="registerObj.username" placeholder="Username" name="username" required>
+      </div>
+      <div class="inputBx">
+        <input type="password" [(ngModel)]="registerObj.password" placeholder="Password" name="password" required>
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Register">
+      </div>
+    </form>
+  </div>
+</div>

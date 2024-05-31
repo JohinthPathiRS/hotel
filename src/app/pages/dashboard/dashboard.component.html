@@ -1,0 +1,15 @@
+<!-- home.component.html -->
+
+<div class="container">
+    <h1>Welcome to Our Hotel</h1>
+    <div class="all">
+        <div class="image-container">
+            <div class="image" *ngFor="let image of images">
+              <img [src]="image.src" alt="{{ image.alt }}">
+              <p>{{ image.description }}</p>
+            </div>
+          </div>
+          
+    </div>
+  </div>
+  

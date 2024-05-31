@@ -1,0 +1,29 @@
+/* chat.component.css */
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .chatbox {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+  }
+  
+  .chatbox .incoming {
+    align-self: flex-start;
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px
+  }  
