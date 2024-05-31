@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { DatePipe } from '@angular/common';
+
 
 
 @Component({
@@ -8,7 +8,7 @@ import { DatePipe } from '@angular/common';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
-  constructor(private datePipe: DatePipe) {}
+
 
   images = [
     {
